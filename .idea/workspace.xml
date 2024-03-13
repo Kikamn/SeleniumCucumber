@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0cb086-8ed1-49b4-8da3-26a8e505feb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rizkika/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/rizkika/stepDef/CucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/rizkika/stepDef/LoginStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Login.Feature" afterDir="false" />
-    </list>
+    <list default="true" id="af0cb086-8ed1-49b4-8da3-26a8e505feb7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +68,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/intel/Desktop/JAVA/selenum_Cucumber/src/main/java/org/rizkika/Main.java",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -135,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709866903295</updated>
       <workItem from="1709866904267" duration="4470000" />
-      <workItem from="1709872000999" duration="1086000" />
+      <workItem from="1709872000999" duration="2244000" />
     </task>
     <servers />
   </component>
