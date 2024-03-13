@@ -1,14 +1,13 @@
-package com.rizkika.stepDef;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    glue = {"com.rizkika.stepDef"},
-        features = {"src/test/resources"}
-       /// plugin = {"pretty"}
+        plugin = {"pretty", "html:target/cucumber-report.html"},
+        glue = {"stepDef"},
+        features = {"src/test/java/features"},
+        monochrome = true
 )
 public class CucumberTest {
 }
