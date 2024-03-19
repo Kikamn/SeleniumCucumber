@@ -24,14 +24,37 @@ dependencies {
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.0'
 
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.17.0'
+
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.7.0")
 }
 
-test {
-    useJUnitPlatform()
-}
+//test {
+    //useJUnitPlatform()
+//}
 
 configurations {
     cucumberRuntime{
         extendsFrom testImplementation
+    }
+}
+
+
+def tags = (findProperty('tags') == null) ? 'not @exclude' : findProperty('tags') + ' and not @exclude'
+
+task cucumber() {
+    description("Running Cucumber Test")
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'html:target/cucumber-report.html',
+                    '--plugin', 'pretty',
+                    '--glue', 'stepDef',
+                    '--tags', "${tags}",
+                    'src/test/java/features'
+            ]
+        }
     }
 }

@@ -9,5 +9,10 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/features"},
         monochrome = true
 )
+//cara jalanin cucumber di teminal
+// ./gradlew cucumber
+// Cara jalanin Tc hanya 1 saja
+// ./gradlew cucumber -Ptags="@login-invalid"
+
 public class CucumberTest {
 }
