@@ -1,51 +1,20 @@
 package stepDef;
-
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import junit.framework.Protectable;
-import junit.runner.BaseTestRunner;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import page.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+public class LoginStep {
 
-public class LoginStep extends BaseTest {
-    //cara bikin ini tulis dulu TC di login.feature
-    // arahkan kursor ke tc yang garis kuning
-    public static WebDriver driver;
-   /* @Before
-    public void beforeTest(){
-        //System.out.println("Before");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disbale-dev-shm-usage");
-        options.addArguments("--remote-allow-origins=*");
+    LoginPage loginPage;
 
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+    public LoginStep() {
+        this.loginPage = new LoginPage();
     }
-
-    @After
-    public void afterTest(){
-        driver.close();
-    }*/
-
-    protected LoginPage loginPage; //inisialisasi
-    @Given("user is on login page") //disebut Method
+    @Given("user is on login page")
     public void userIsOnLoginPage() {
-        loginPage = new LoginPage(driver); // cara object
-        loginPage.goToLoginPage(); //memangil inisialisasi yang di buat
+        loginPage.goToLoginPage();
     }
 
     @And("user input username with {string}")

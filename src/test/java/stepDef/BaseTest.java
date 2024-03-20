@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseTest {
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     protected void getDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disbale-dev-shm-usage");
         options.addArguments("--remote-allow-origins=*");

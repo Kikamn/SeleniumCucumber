@@ -1,19 +1,13 @@
 package page;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static stepDef.BaseTest.driver;
 
 public class LoginPage {
-    public static WebDriver driver;
     By usernameInputText = By.cssSelector("input#user-name");
     By passwordInputText = By.xpath("//*[@id=\"password\"]");
     By loginButton = By.id("login-button");
 
-    public LoginPage(WebDriver driver){ //bikin contractur yang sama dengan name class
-        this.driver = driver;
-    }
     public void goToLoginPage(){
         driver.get("https://www.saucedemo.com/");
     }

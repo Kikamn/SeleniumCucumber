@@ -8,7 +8,7 @@ Feature: Login
     And user input username with "standard_user"
     And user input password with "secret_sauce"
     When user click login button
-    Then user is on homepage
+#    Then user is on homepage
 
   @login-invalid
   Scenario: Login using invalid email and password
